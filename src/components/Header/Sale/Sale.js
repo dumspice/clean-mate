@@ -2,10 +2,16 @@
 import React, { useState, useEffect } from "react";
 import classNames from "classnames/bind";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBolt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBolt,
+  faCircleChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 
+import config from "../../../config";
 import styles from "./Sale.module.scss";
 import SaleItem from "./SaleItem";
+import { SALE_ITEMS } from "../constant";
+import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
@@ -23,7 +29,7 @@ function FlashSale() {
 
   function calculateTimeLeft() {
     const endTime = new Date();
-    endTime.setHours(endTime.getHours() + 1); // Đếm ngược 1 giờ (có thể thay đổi)
+    endTime.setHours(endTime.getHours() + 1);
     const difference = endTime - new Date();
 
     if (difference <= 0) {
@@ -53,13 +59,16 @@ function FlashSale() {
         </div>
       </div>
       <div className={cx("sale-items")}>
-        <SaleItem />
-        <SaleItem />
-        <SaleItem />
-        <SaleItem />
-        <SaleItem />
-        <SaleItem />
-        <SaleItem />
+        {SALE_ITEMS.slice(0, 5).map((data) => (
+          <SaleItem data={data} key={data.id} />
+        ))}
+        <Link to={config.routes.flashSale} className={cx("more-btn")}>
+          Xem tất cả
+          <FontAwesomeIcon
+            icon={faCircleChevronRight}
+            className={cx("see-more-icon")}
+          />
+        </Link>
       </div>
     </div>
   );

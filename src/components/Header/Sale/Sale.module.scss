@@ -1,3 +1,8 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .flash-sale {
   display: flex;
   justify-content: space-between;
@@ -29,4 +34,113 @@
   padding: 0 0.25rem;
   background-color: #2c2c2c; /* Màu đen cho số */
   border-radius: 0.25rem;
+}
+
+// Sale Item
+
+.sale-items {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 10px;
+  margin: 10px 0;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+.sale-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  width: 172px;
+  height: 170px;
+  background-color: var(--white-color);
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.shift {
+  color: #1a3c44;
+}
+
+.name,
+.shift-time {
+  text-align: start;
+  margin-top: 5px;
+}
+
+.name,
+.age,
+.shift,
+.shift-time {
+  font-size: 1.4rem;
+}
+
+.shift-time {
+  opacity: 0.7;
+}
+
+.price-section {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 1.4rem;
+  margin: 5px 0;
+}
+
+.sale-price {
+  color: #ff4444;
+}
+
+.list-price {
+  color: #7a7a7a;
+  text-decoration: line-through;
+  margin-left: 8px;
+  margin-bottom: 4px;
+}
+
+.order-btn {
+  width: 80px;
+  height: 26px;
+  margin: 0 auto;
+  padding: 4px 8px;
+  font-size: 1.2rem;
+  color: var(--white-color);
+  border-radius: 5px;
+  background-color: #4caf50;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #66bb6a;
+  }
+}
+
+// See more button
+.more-btn {
+  display: block;
+  background-color: transparent;
+  text-align: center;
+  line-height: 160px;
+  font-size: 1.4rem;
+  color: #4c4c4c;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.see-more-icon {
+  margin-left: 5px;
 }

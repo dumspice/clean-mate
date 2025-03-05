@@ -4,6 +4,7 @@
   --text-color: #161823;
   --white-color: #fff;
   --primary-color: #59e2e8;
+  --sale-price-color: #f56565;
 }
 
 * {
@@ -23,4 +24,16 @@ body {
   text-rendering: optimizeSpeed;
   color: var(--text-color);
   overflow-y: overlay;
+}
+
+button,
+input,
+[tabindex] {
+  outline: none;
+  border: none;
+}
+
+a[href] {
+  color: var(--text-color);
+  text-decoration: none;
 }

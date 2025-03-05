@@ -5,8 +5,8 @@
   margin: 0 auto;
   background: url("https://jupviec.vn/booking/_nuxt/img/bg_header_booking.c51d6c5.png")
     no-repeat;
-  background-size: cover;
-  background-color: var(--primary-color);
+  background-size: contain;
+  // background-color: var(--primary-color);
   overflow: hidden;
   min-height: 100vh;
   display: flex;

@@ -1,5 +1,27 @@
-function SaleItem() {
-  return <h1>SaleItem</h1>;
+import classNames from "classnames/bind";
+
+import styles from "./Sale.module.scss";
+
+const cx = classNames.bind(styles);
+
+function SaleItem({ data }) {
+  return (
+    <div className={cx("sale-item-wrapper")}>
+      <div className={cx("profile-image")}>
+        <img src={data.avatar} alt="user-avatar" className={cx("avatar")} />
+        <p className={cx("shift")}>{data.shift}</p>
+      </div>
+      <p className={cx("name")}>
+        {data.name}, <span className={cx("age")}>{data.age}</span>
+      </p>
+      <p className={cx("shift-time")}>{data.shiftTime}</p>
+      <div className={cx("price-section")}>
+        <p className={cx("sale-price")}>{data.salePrice}</p>
+        <p className={cx("list-price")}>{data.listPrice}</p>
+      </div>
+      <button className={cx("order-btn")}>Đặt ngay</button>
+    </div>
+  );
 }
 
 export default SaleItem;
