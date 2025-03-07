@@ -1,10 +1,33 @@
 @import "normalize.css";
 
 :root {
-  --text-color: #161823;
-  --white-color: #fff;
+  //color
+
   --primary-color: #59e2e8;
+  --text-color: #444;
+  --white-color: #fff;
+  --black-color: #000;
   --sale-price-color: #f56565;
+
+  --booking-text-color: #5d5d5d;
+
+  --non-header-layout-background-color: #f1f1f1b8;
+  --non-header-layout-header-title-color: #5d5d5d;
+
+  --navigation-text-color: #9c9c9c;
+
+  --history-tab-text-color: #4a4a4a;
+  --history-tab-active-color: #4ec7ce;
+
+  --favourite-sub-header-text-color: #707070;
+
+  --account-text-color: #5d5d5d;
+  --account-font-weight-bold: 700;
+
+  //font-size:
+
+  --non-header-layout-header-title-font-size: 2rem;
+  --non-header-layout-header-title-font-weight: 700;
 }
 
 * {
@@ -36,4 +59,21 @@ input,
 a[href] {
   color: var(--text-color);
   text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 66px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  line-height: 66px;
+}
+
+.header-title {
+  font-size: var(--non-header-layout-header-title-font-size);
+  color: var(--non-header-layout-header-title-color);
+  font-weight: var(--non-header-layout-header-title-font-weight);
 }

@@ -3,45 +3,39 @@
   width: 100%;
 }
 
+.title {
+  font-size: 1.6rem;
+}
+
 .service-selection {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   margin-bottom: 20px;
+  margin-top: 12px;
 }
 
 .service-card {
-  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   text-align: center;
   cursor: pointer;
 }
 
-.service-card.selected {
-  background-color: #e0f7fa;
-  border-color: #00c853;
+.icon {
+  display: block;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-.booking-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.booking-form label {
-  display: flex;
-  flex-direction: column;
-}
-
-.booking-form input {
-  padding: 5px;
-  margin-top: 5px;
-}
-
-.booking-form button {
-  background-color: #ff4444;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+.service {
+  margin-top: 6px;
+  font-size: 1.4rem;
+  color: var(--booking-text-color);
 }

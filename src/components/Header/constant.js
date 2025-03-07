@@ -3,6 +3,7 @@ export const SALE_ITEMS = [
     id: 1,
     avatar:
       "https://e7.pngegg.com/pngimages/442/17/png-clipart-computer-icons-user-profile-male-user-heroes-head.png",
+    star: 5,
     name: "Huệ",
     age: 35,
     shift: "Ca lẻ",
@@ -14,6 +15,7 @@ export const SALE_ITEMS = [
     id: 2,
     avatar:
       "https://e7.pngegg.com/pngimages/442/17/png-clipart-computer-icons-user-profile-male-user-heroes-head.png",
+    star: 4.3,
     name: "Thu",
     age: 47,
     shift: "Ca lẻ",
@@ -25,6 +27,7 @@ export const SALE_ITEMS = [
     id: 3,
     avatar:
       "https://e7.pngegg.com/pngimages/442/17/png-clipart-computer-icons-user-profile-male-user-heroes-head.png",
+    star: 4.7,
     name: "Hoài",
     age: 48,
     shift: "Ca lẻ",
@@ -36,6 +39,7 @@ export const SALE_ITEMS = [
     id: 4,
     avatar:
       "https://e7.pngegg.com/pngimages/442/17/png-clipart-computer-icons-user-profile-male-user-heroes-head.png",
+    star: 5,
     name: "Hương",
     age: 40,
     shift: "Ca lẻ",
@@ -47,6 +51,7 @@ export const SALE_ITEMS = [
     id: 5,
     avatar:
       "https://e7.pngegg.com/pngimages/442/17/png-clipart-computer-icons-user-profile-male-user-heroes-head.png",
+    star: 4.5,
     name: "Thơm",
     age: 51,
     shift: "Ca lẻ",
@@ -58,6 +63,7 @@ export const SALE_ITEMS = [
     id: 6,
     avatar:
       "https://e7.pngegg.com/pngimages/442/17/png-clipart-computer-icons-user-profile-male-user-heroes-head.png",
+    star: 4.8,
     name: "Thảo",
     age: 57,
     shift: "Ca lẻ",
@@ -69,6 +75,7 @@ export const SALE_ITEMS = [
     id: 7,
     avatar:
       "https://e7.pngegg.com/pngimages/442/17/png-clipart-computer-icons-user-profile-male-user-heroes-head.png",
+    star: 5,
     name: "Thuỷ",
     age: 47,
     shift: "Ca lẻ",

@@ -1,6 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import classNames from "classnames/bind";
+
 import config from "../../config";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -48,8 +48,14 @@ function Navigation() {
     <nav className={cx("navigation")}>
       {navItems.map((item, index) => (
         <Link key={index} to={item.path} className={cx("nav-item")}>
-          <span>{item.icon}</span>
-          <span>{item.label}</span>
+          <div
+            className={cx("nav-content", {
+              active: window.location.pathname === item.path,
+            })}
+          >
+            <span className={cx("nav-icon")}>{item.icon}</span>
+            <span className={cx("nav-label")}>{item.label}</span>
+          </div>
         </Link>
       ))}
     </nav>

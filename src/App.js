@@ -13,6 +13,12 @@ function App() {
 
             let Layout = DefaultLayout;
 
+            if (route.layout) {
+              Layout = route.layout;
+            } else {
+              Layout = DefaultLayout;
+            }
+
             return (
               <Route
                 key={index}
