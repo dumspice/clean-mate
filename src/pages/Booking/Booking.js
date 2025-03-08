@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import classNames from "classnames/bind";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -13,6 +14,7 @@ import {
 
 const cx = classNames.bind(styles);
 function Booking() {
+  const navigate = useNavigate();
   const services = [
     {
       id: 1,
@@ -46,12 +48,19 @@ function Booking() {
     },
   ];
 
+  const handleNavigate = () => {
+    navigate("/service");
+  };
   return (
     <section className={cx("booking")}>
       <h4 className={cx("title")}>Đặt dịch vụ</h4>
       <div className={cx("service-selection")}>
         {services.map((service) => (
-          <div key={service.id} className={cx("service-card")}>
+          <div
+            key={service.id}
+            className={cx("service-card")}
+            onClick={handleNavigate}
+          >
             <span className={cx("icon")}>{service.icon}</span>
             <span className={cx("service")}>{service.name}</span>
           </div>

@@ -1,0 +1,97 @@
+.user-favourite-employees,
+.common-favorite-employees {
+  width: 100%;
+
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 8px;
+    margin: 12px 0 0;
+    background-color: var(--favourite-sub-header-background-color);
+    color: var(--favourite-sub-header-text-color);
+  }
+
+  .employee-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .employee-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+
+    .employee-avatar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 15px;
+
+      .avatar {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .rating {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+
+        .star-icon,
+        .rating-value {
+          font-size: 1.4rem;
+        }
+
+        .star-icon {
+          color: #f5c518;
+        }
+
+        .rating-value {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .employee-info {
+      flex: 1;
+
+      h3 {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--text-color);
+      }
+
+      p {
+        font-size: 1.4rem;
+        color: #666;
+        margin: 2px 0;
+      }
+
+      .vaccinated {
+        display: flex;
+        align-items: center;
+
+        .vaccinated-text {
+          font-size: 1.4rem;
+          color: #b6b6b6;
+        }
+
+        .check-icon {
+          color: #28a745;
+          margin-right: 5px;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+.user-favourite-employees {
+  h2 {
+    margin: 4px 0 0;
+  }
+}
