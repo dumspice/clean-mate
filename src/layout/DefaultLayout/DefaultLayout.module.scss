@@ -1,4 +1,3 @@
-/* components/Layout.css */
 .wrapper {
   font-family: Arial, sans-serif;
   max-width: 650px;
@@ -7,7 +6,7 @@
     no-repeat;
   background-size: contain;
   // background-color: var(--primary-color);
-  overflow: hidden;
+  overflow-y: auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,4 +18,5 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding-bottom: 60px;
 }
