@@ -17,12 +17,12 @@
   cursor: pointer;
 
   &:hover {
-    color: var(--history-tab-active-color);
+    color: var(--primary-color-bold);
   }
 
   &.active {
-    color: var(--history-tab-active-color);
-    border-bottom: 2px solid var(--history-tab-active-color);
+    color: var(--primary-color-bold);
+    border-bottom: 2px solid var(--primary-color-bold);
   }
 }
 

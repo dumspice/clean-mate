@@ -176,8 +176,10 @@ function Favourite() {
       <div className={cx("header")}>
         <h1 className={cx("header-title")}>Nhân viên ưu thích</h1>
       </div>
-      <UserFavouriteEmployees />
-      <CommonFavouriteEmployees />
+      <div className={cx("content-wrapper")}>
+        <UserFavouriteEmployees />
+        <CommonFavouriteEmployees />
+      </div>
     </>
   );
 }

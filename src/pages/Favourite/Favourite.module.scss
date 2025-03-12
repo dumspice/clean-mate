@@ -1,12 +1,14 @@
+.content-wrapper {
+  width: 100%;
+}
+
 .user-favourite-employees,
 .common-favorite-employees {
-  width: 100%;
-
   h2 {
     font-size: 1.6rem;
     font-weight: 600;
     padding: 8px;
-    margin: 12px 0 0;
+    margin: 8px 0 0;
     background-color: var(--favourite-sub-header-background-color);
     color: var(--favourite-sub-header-text-color);
   }
@@ -88,6 +90,10 @@
       }
     }
   }
+}
+
+.common-favorite-employees {
+  padding-bottom: 60px;
 }
 
 .user-favourite-employees {
