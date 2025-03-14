@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import styles from "./Header.module.scss";
 import config from "../../config";
 import Sale from "./Sale/Sale";
+import images from "../../assets/Images/images";
 
 const cx = classNames.bind(styles);
 
@@ -14,11 +15,7 @@ function Header() {
     <header className={cx("header")}>
       <div className={cx("container")}>
         <Link to={config.routes.account}>
-          <img
-            className={cx("image")}
-            src="https://e7.pngegg.com/pngimages/442/17/png-clipart-computer-icons-user-profile-male-user-heroes-head.png"
-            alt="avatar"
-          />
+          <img className={cx("image")} src={images.userAvatar} alt="avatar" />
         </Link>
         <div className={cx("content")}>
           <span>Chào bạn, Hoàng Tiến Dũng</span>

@@ -1,6 +1,6 @@
 .navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #fff;
   padding: 10px;
   position: fixed;
@@ -25,5 +25,11 @@
 
   &.active {
     color: var(--primary-color);
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .navigation {
+    width: 100%;
   }
 }

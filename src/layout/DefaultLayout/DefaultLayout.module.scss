@@ -2,7 +2,7 @@
   font-family: Arial, sans-serif;
   max-width: 650px;
   margin: 0 auto;
-  background: url("https://jupviec.vn/booking/_nuxt/img/bg_header_booking.c51d6c5.png")
+  background: url("../../assets/Images/bg_header_booking_teal_white.png")
     no-repeat;
   background-size: contain;
   // background-color: var(--primary-color);
@@ -19,4 +19,10 @@
   align-items: center;
   width: 100%;
   padding-bottom: 60px;
+}
+
+@media screen and (max-width: 1170px) {
+  .wrapper {
+    max-width: 100%;
+  }
 }
