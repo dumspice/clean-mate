@@ -5,6 +5,7 @@ const routes = {
   notification: "/notification",
   account: "/account",
   flashSale: "flash-sale",
+  multiStepForm: "/service",
 };
 
 export default routes;

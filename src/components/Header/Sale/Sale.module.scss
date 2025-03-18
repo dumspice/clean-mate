@@ -53,11 +53,12 @@
   flex-direction: column;
   flex: 0 0 auto;
   width: 172px;
-  height: 170px;
+  height: 190px;
   background-color: var(--white-color);
   margin-top: 10px;
   border-radius: 5px;
-  padding: 8px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
 }
 
 .profile-image {

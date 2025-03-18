@@ -2,11 +2,9 @@
   font-family: Arial, sans-serif;
   max-width: 650px;
   margin: 0 auto;
-  background: url("../../assets/Images/bg_header_booking_teal_white.png")
-    no-repeat;
-  background-size: contain;
-  // background-color: var(--primary-color);
-  overflow-y: auto;
+  background-color: var(--white-color);
+  // background-color: var(--form-layout-background-color);
+  overflow: hidden;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,8 +16,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-bottom: 60px;
-  background-color: var(--white-color);
 }
 
 @media screen and (max-width: 1170px) {

@@ -17,6 +17,7 @@ import NotAvailableModal from "../../components/Modal/NotAvailableModal/NotAvail
 const cx = classNames.bind(styles);
 function Booking() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   const navigate = useNavigate();
   const services = [
     {
@@ -53,8 +54,11 @@ function Booking() {
   ];
 
   const handleNavigate = (path) => {
-    if (path) navigate(path);
-    else setIsModalOpen(true);
+    if (path) {
+      navigate(path);
+    } else {
+      setIsModalOpen(true);
+    }
   };
 
   const handleCloseModal = () => {
@@ -64,6 +68,7 @@ function Booking() {
   return (
     <section className={cx("booking")}>
       <h4 className={cx("title")}>Đặt dịch vụ</h4>
+
       <div className={cx("service-selection")}>
         {services.map((service) => (
           <div
@@ -76,6 +81,7 @@ function Booking() {
           </div>
         ))}
       </div>
+
       {isModalOpen && <NotAvailableModal onClose={handleCloseModal} />}
     </section>
   );
