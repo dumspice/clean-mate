@@ -1,0 +1,125 @@
+.header-content {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+
+  .header-title {
+    margin-left: 0 auto;
+  }
+
+  .information-btn,
+  .back-btn {
+    font-size: 1.6rem;
+    background-color: var(--white-color);
+    border-bottom: 1px solid #ddd;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .information-btn {
+    color: var(--primary-color);
+
+    &:hover {
+      color: var(--primary-color-bold);
+    }
+  }
+}
+
+.content-container {
+  padding: 20px 20px 102px 20px;
+}
+
+.payment-methods {
+  width: 100%;
+
+  .payment-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin: 20px 0 16px;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    cursor: pointer;
+
+    &.active {
+      border: 1px solid var(--primary-color-bold);
+      background-color: var(--white-color);
+    }
+  }
+}
+
+.payment-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 1px solid var(--primary-color-bold);
+}
+
+.payment-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  span {
+    line-height: 25px;
+  }
+
+  .payment-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-color-bold);
+  }
+
+  .payment-guide {
+    font-size: 1.4rem;
+    color: #666;
+  }
+}
+
+.next-step-section {
+  position: fixed;
+  bottom: 0;
+  left: calc(77.8% - 50vw);
+  right: calc(77.8% - 50vw);
+  padding: 10px 10px;
+  background: #fff;
+  z-index: 999;
+
+  .total-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .price-value {
+      font-size: 1.6rem;
+      color: var(--primary-color-bold);
+    }
+  }
+
+  .next-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    background: var(--primary-color-bold);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .next-step-section {
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+}

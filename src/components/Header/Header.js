@@ -15,7 +15,11 @@ function Header() {
     <header className={cx("header")}>
       <div className={cx("container")}>
         <Link to={config.routes.account}>
-          <img className={cx("image")} src={images.userAvatar} alt="avatar" />
+          <img
+            className={cx("image")}
+            src="https://e7.pngegg.com/pngimages/442/17/png-clipart-computer-icons-user-profile-male-user-heroes-head.png"
+            alt="avatar"
+          />
         </Link>
         <div className={cx("content")}>
           <span>Chào bạn, Hoàng Tiến Dũng</span>

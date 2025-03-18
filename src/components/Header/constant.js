@@ -1,11 +1,11 @@
+import images from "../../assets/Images/images";
 export const SALE_ITEMS = [
   {
     id: 1,
-    avatar:
-      "https://e7.pngegg.com/pngimages/442/17/png-clipart-computer-icons-user-profile-male-user-heroes-head.png",
-    star: 5,
-    name: "Huệ",
-    age: 35,
+    avatar: images.userAvatar,
+    star: 4.7,
+    name: "Dũng",
+    age: 20,
     shift: "Ca lẻ",
     shiftTime: "Hôm nay (13:00 - 16:00)",
     listPrice: "258.000 ₫",
@@ -13,11 +13,10 @@ export const SALE_ITEMS = [
   },
   {
     id: 2,
-    avatar:
-      "https://e7.pngegg.com/pngimages/442/17/png-clipart-computer-icons-user-profile-male-user-heroes-head.png",
-    star: 4.3,
-    name: "Thu",
-    age: 47,
+    avatar: images.quang,
+    star: 5,
+    name: "Quang",
+    age: 20,
     shift: "Ca lẻ",
     shiftTime: "T2 (15:00 - 18:00)",
     listPrice: "350.000 ₫",
@@ -25,11 +24,10 @@ export const SALE_ITEMS = [
   },
   {
     id: 3,
-    avatar:
-      "https://e7.pngegg.com/pngimages/442/17/png-clipart-computer-icons-user-profile-male-user-heroes-head.png",
+    avatar: images.lam,
     star: 4.7,
-    name: "Hoài",
-    age: 48,
+    name: "Lâm",
+    age: 20,
     shift: "Ca lẻ",
     shiftTime: "T3 (17:00 - 20:00)",
     listPrice: "458.000 ₫",
@@ -37,11 +35,10 @@ export const SALE_ITEMS = [
   },
   {
     id: 4,
-    avatar:
-      "https://e7.pngegg.com/pngimages/442/17/png-clipart-computer-icons-user-profile-male-user-heroes-head.png",
+    avatar: images.duc,
     star: 5,
-    name: "Hương",
-    age: 40,
+    name: "Đức",
+    age: 20,
     shift: "Ca lẻ",
     shiftTime: "T4 (8:00 - 11:00)",
     listPrice: "400.000 ₫",
@@ -49,11 +46,10 @@ export const SALE_ITEMS = [
   },
   {
     id: 5,
-    avatar:
-      "https://e7.pngegg.com/pngimages/442/17/png-clipart-computer-icons-user-profile-male-user-heroes-head.png",
+    avatar: images.ninh,
     star: 4.5,
-    name: "Thơm",
-    age: 51,
+    name: "Ninh",
+    age: 20,
     shift: "Ca lẻ",
     shiftTime: "T5 (12:00 - 15:00)",
     listPrice: "466.000 ₫",

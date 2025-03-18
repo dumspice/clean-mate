@@ -1,0 +1,82 @@
+:root {
+  --success-color: #6db162;
+}
+
+.header-content {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+
+  .header-title {
+    margin-left: 0 auto;
+  }
+
+  .information-btn,
+  .back-btn {
+    font-size: 1.6rem;
+    background-color: var(--white-color);
+    border-bottom: 1px solid #ddd;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .information-btn {
+    color: var(--primary-color);
+
+    &:hover {
+      color: var(--primary-color-bold);
+    }
+  }
+}
+
+.content-container {
+  padding: 20px 20px 102px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .check-icon {
+    font-size: 8rem;
+    color: var(--success-color);
+  }
+
+  .success-message {
+    font-size: 1.8rem;
+    color: var(--success-color);
+  }
+}
+
+.confirm-section {
+  position: fixed;
+  bottom: 0;
+  left: calc(77.8% - 50vw);
+  right: calc(77.8% - 50vw);
+  padding: 10px 10px;
+  background: #fff;
+  z-index: 999;
+
+  .confirm-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    background: var(--primary-color-bold);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .confirm-section {
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+}

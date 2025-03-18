@@ -34,6 +34,10 @@
   //proportion
 
   --account-content-padding: 0 16px;
+
+  //Font family
+
+  --font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -47,7 +51,7 @@ html {
 }
 
 body {
-  //   font-family: var(--font-family);
+  font-family: monospace, sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;

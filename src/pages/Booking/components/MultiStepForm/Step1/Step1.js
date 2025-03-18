@@ -108,28 +108,28 @@ const Step1 = ({
         <h4>Thời gian dọn dẹp</h4>
         <div className={cx("options")}>
           <button
-            className={cx({ active: formData.hours === 2 })}
-            onClick={() => handleChange("hours", 2)}
+            className={cx({ active: formData.area === 15 })}
+            onClick={() => handleChange("area", 15)}
           >
             2 Giờ
             <br />
-            Tối đa 60m² tổng sàn
+            Tối đa 15m² tổng sàn
           </button>
           <button
-            className={cx({ active: formData.hours === 3 })}
-            onClick={() => handleChange("hours", 3)}
+            className={cx({ active: formData.area === 20 })}
+            onClick={() => handleChange("area", 20)}
           >
-            3 Giờ
+            2 Giờ
             <br />
-            Tối đa 90m² tổng sàn
+            Tối đa 20m² tổng sàn
           </button>
           <button
-            className={cx({ active: formData.hours === 3.5 })}
-            onClick={() => handleChange("hours", 3.5)}
+            className={cx({ active: formData.area === 30 })}
+            onClick={() => handleChange("area", 30)}
           >
-            3.5 Giờ
+            2 Giờ
             <br />
-            Tối đa 105m² tổng sàn
+            Tối đa 30m² tổng sàn
           </button>
           <button>Tùy chọn khác</button>
         </div>

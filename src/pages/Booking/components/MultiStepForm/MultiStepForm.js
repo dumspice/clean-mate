@@ -5,6 +5,8 @@ import styles from "./MultiStepForm.module.scss";
 import Step1 from "./Step1/Step1";
 import Step2 from "./Step2/Step2";
 import Step3 from "./Step3/Step3";
+import Step4 from "./Step4/Step4";
+import Step5 from "./Step5/Step5";
 
 const cx = classNames.bind(styles);
 
@@ -12,7 +14,7 @@ const MultiStepForm = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     workers: 1,
-    hours: 3,
+    hours: 2,
     useOwnTools: true,
     useVacuum: false,
     extraServices: { ironing: true, laundry: true },
@@ -24,6 +26,7 @@ const MultiStepForm = () => {
     discountOnDay: 0,
     indicator: "",
     paymentMethod: "",
+    area: 15,
   });
 
   const handleNext = () => setStep(step + 1);
@@ -55,13 +58,13 @@ const MultiStepForm = () => {
   };
 
   const calculateTotal = () => {
-    let basePrice = formData.workers === 1 ? 254000 : 508000; // Base price for 1 or 2 workers
-    if (formData.hours === 3)
-      basePrice = formData.workers === 1 ? 314000 : 628000; // 3 hours
-    if (formData.hours === 3.5)
-      basePrice = formData.workers === 1 ? 344000 : 688000; // 3.5 hours
-    if (formData.extraServices.ironing) basePrice += 50000;
-    if (formData.extraServices.cooking) basePrice += 50000;
+    let basePrice = formData.workers === 1 ? 160000 : 180000; // Base price for 1 or 2 workers
+    if (formData.area === 15)
+      basePrice = formData.workers === 1 ? 160000 : 200000;
+    if (formData.area === 20)
+      basePrice = formData.workers === 1 ? 180000 : 200000;
+    if (formData.area === 30)
+      basePrice = formData.workers === 1 ? 180000 : 200000;
 
     // Add prices for add-on products
     let addOnTotal = 0;
@@ -120,33 +123,24 @@ const MultiStepForm = () => {
             handleBack={handleBack}
           />
         );
-      //   case 4:
-      //     return (
-      //       <Step4
-      //         formData={formData}
-      //         handleChange={handleChange}
-      //         handleNext={handleNext}
-      //         handleBack={handleBack}
-      //       />
-      //     );
-      //   case 5:
-      //     return (
-      //       <Step5
-      //         formData={formData}
-      //         calculateTotal={calculateTotal}
-      //         handleNext={handleNext}
-      //         handleBack={handleBack}
-      //       />
-      //     );
-      //   case 6:
-      //     return (
-      //       <Step6
-      //         formData={formData}
-      //         handleChange={handleChange}
-      //         calculateTotal={calculateTotal}
-      //         handleBack={handleBack}
-      //       />
-      //     );
+      case 4:
+        return (
+          <Step4
+            formData={formData}
+            calculateTotal={calculateTotal}
+            handleNext={handleNext}
+            handleBack={handleBack}
+          />
+        );
+      case 5:
+        return (
+          <Step5
+            formData={formData}
+            calculateTotal={calculateTotal}
+            handleNext={handleNext}
+            handleBack={handleBack}
+          />
+        );
       default:
         return null;
     }
